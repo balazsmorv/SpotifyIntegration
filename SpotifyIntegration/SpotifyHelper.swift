@@ -13,6 +13,7 @@ import SpotifyiOS
 import UIKit
 
 
+
 public protocol SpotifyHelperProtocol {
     // MARK: - Input - App lifecycle
 
