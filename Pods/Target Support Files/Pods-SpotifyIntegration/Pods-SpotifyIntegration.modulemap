@@ -1,0 +1,6 @@
+framework module Pods_SpotifyIntegration {
+  umbrella header "Pods-SpotifyIntegration-umbrella.h"
+
+  export *
+  module * { export * }
+}
