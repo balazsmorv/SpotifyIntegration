@@ -360,7 +360,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa/RxCocoa.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.framework/Headers\"",
-					"\"$(PROJECT_DIR)/SpotifyiOS.framework/Versions/A/Headers/\"",
+					"\"SpotifyiOS.framework/Versions/A/Headers\"",
 				);
 				INFOPLIST_FILE = SpotifyIntegration/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -411,7 +411,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa/RxCocoa.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.framework/Headers\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.framework/Headers\"",
-					"\"$(SDKROOT)/SpotifyiOS.framework/Versions/A/Headers/\"",
+					"\"SpotifyiOS.framework/Versions/A/Headers\"",
 				);
 				INFOPLIST_FILE = SpotifyIntegration/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
