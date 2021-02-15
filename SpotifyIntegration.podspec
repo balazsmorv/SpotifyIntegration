@@ -25,8 +25,8 @@ s.source = { :git => "https://github.com/balazsmorv/SpotifyIntegration.git",
 
 # 7
 s.framework = "UIKit"
-s.dependency 'RxSwift', '~> 6.1.0'
-s.dependency 'RxCocoa', '~> 6.1.0'
+s.dependency 'RxSwift', '~> 6.0'
+s.dependency 'RxCocoa', '~> 6.0'
 
 # 8
 s.source_files = "SpotifyIntegration/*.{swift,xib}"

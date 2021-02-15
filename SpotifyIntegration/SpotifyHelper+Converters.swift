@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 import RxRelay
+import SpotifyiOS
 
 public class SpotifyConverter {
     

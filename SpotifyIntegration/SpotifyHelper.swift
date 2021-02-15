@@ -7,10 +7,11 @@
 //
 
 import Foundation
-import Interface_DependencyInjection
-import Interface_Routing
 import RxRelay
 import RxSwift
+import SpotifyiOS
+import UIKit
+
 
 public protocol SpotifyHelperProtocol {
     // MARK: - Input - App lifecycle
@@ -217,10 +218,7 @@ class SpotifyHelper: NSObject, SPTAppRemoteDelegate, SPTAppRemotePlayerStateDele
             appRemote.connectionParameters.accessToken = access_token
             accessToken = access_token
         } else if let error_description = parameters?[SPTAppRemoteErrorDescriptionKey] {
-            let currentPageRepository: CurrentPageRepositoryProtocol = Resolver.resolve()
-            currentPageRepository.currentPage.accept(.sheet(UIAlertController(title: "Spotify error",
-                                                                              message: error_description,
-                                                                              preferredStyle: .alert)))
+            self.sendToErrorOutput(title: "Spotify Error", description: error_description)
         }
         return true
     }
@@ -289,7 +287,7 @@ class SpotifyHelper: NSObject, SPTAppRemoteDelegate, SPTAppRemotePlayerStateDele
 
             strongSelf.appRemote.imageAPI?.fetchImage(forItem: track, with: strongSelf.albumImageSize, callback: { image, error in
                 if let error = error {
-                    single(.error(error))
+                    single(.failure(error))
                 }
 
                 if let image = image as? UIImage {
