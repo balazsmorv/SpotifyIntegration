@@ -8,7 +8,7 @@ s.summary = "SpotifyIntegration adds the Spotify SDK to your app, along with hel
 s.requires_arc = true
 
 # 2
-s.version = "0.1.2"
+s.version = "0.1.4"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -35,8 +35,8 @@ s.source_files = "SpotifyIntegration/*.{swift,xib}"
 #s.resources = "RWPickFlavor/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
 
-s.preserve_paths = "$(SRCROOT)"
-s.module_map = "$(SRCROOT)/module.modulemap"
+s.preserve_path = "SpotifyiOS/module.modulemap"
+s.module_map = "SpotifyiOS/module.modulemap"
 
 s.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => "$(PROJECT_DIR)/SpotifyiOS.framework/Versions/A/Headers/" }
 s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PROJECT_DIR)/SpotifyiOS.framework/Versions/A/Headers/" }
