@@ -1,6 +1,0 @@
-//module SpotifyiOS {
-//    //header "/Users/balazsmorvay/Documents/Libraries/SpotifyIntegration/SpotifyiOS.framework/Versions/A/Headers/SpotifyiOS.h"
-//    umbrella header "SpotifyiOS.h"
-//    link "SpotifyiOS"
-//    export *
-//}

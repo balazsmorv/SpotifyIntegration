@@ -7,6 +7,7 @@ target 'SpotifyIntegration' do
   
   pod 'RxSwift', '6.1.0'
   pod 'RxCocoa', '6.1.0'
+  pod 'SpotifySDK' '0.1.0'
 
   # Pods for SpotifyIntegration
 

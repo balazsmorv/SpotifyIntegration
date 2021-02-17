@@ -1,5 +1,0 @@
-
-module SpotifyiOS {
-    umbrella header "SpotifyiOS.h"
-    export *
-}
